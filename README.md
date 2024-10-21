@@ -31,7 +31,10 @@ Sistem ini bertujuan untuk mengelola data karyawan dalam perusahaan. Dengan fitu
 8. **Restore Data Karyawan**
    - Memulihkan data karyawan yang telah dihapus.
 
-9. **Validasi Data Karyawan**
+9. **Pengangkatan Karyawan Jadi Tetap**
+   - Mengubah status karyawan kontrak menjadi karyawan tetap.
+
+10. **Validasi Data Karyawan**
    - Memastikan bahwa data yang dimasukkan oleh pengguna sesuai dengan format dan kriteria yang telah ditetapkan, mengurangi kemungkinan kesalahan input.
 
 ## Struktur Data Karyawan
@@ -89,9 +92,9 @@ Fungsi untuk mengekspor data karyawan ke dalam file CSV.
 
 Fungsi untuk mengembalikan data karyawan yang dihapus.
 
-### 9. `generate_new_code(data_karyawan, kode_karyawan)`
+### 9. `angkat_karyawan_jadi_tetap(data_karyawan)`
 
-Fungsi untuk menghasilkan kode karyawan baru jika diperlukan.
+Fungsi untuk mengubah status karyawan kontrak menjadi karyawan tetap.
 
 ### 10. `validasi_data(data_karyawan)`
 
@@ -129,5 +132,8 @@ Fungsi untuk memvalidasi input data karyawan baru, memastikan semua informasi ya
 8. **Restore Data Karyawan**
    - Pilih menu 8 dan masukkan kode karyawan yang ingin dipulihkan dari riwayat penghapusan.
 
-9. **Keluar dari Program**
-   - Pilih menu 9 untuk keluar dari program dan menghentikan eksekusi.
+9. **Pengangkatan Karyawan Jadi Tetap**
+   - Pilih menu 9 untuk mengubah status karyawan kontrak menjadi karyawan tetap.
+
+10. **Keluar dari Program**
+    - Pilih menu 10 untuk keluar dari program dan menghentikan eksekusi.
