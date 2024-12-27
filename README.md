@@ -1,139 +1,140 @@
 # CAPSTONE-MODUL-1-PURWADHIKA
-Program ini mengelola data karyawan dengan fungsi CRUD (tambah, baca, ubah, hapus), pencarian berdasarkan nama/divisi, dan validasi input. Riwayat data yang dihapus juga tersimpan. Sederhana, namun fungsional untuk kebutuhan manajemen data karyawan dasar.
+This program manages employee data with CRUD (add, read, change, delete) functions, search by name/division, and input validation. Deleted data history is also stored. Simple, yet functional for basic employee data management needs.
 
-# Manajemen Data Karyawan
+# Employee Data Management
 
-Sistem ini bertujuan untuk mengelola data karyawan dalam perusahaan. Dengan fitur-fitur seperti menambah, mengedit, menghapus, dan memulihkan data karyawan.
+This system is designed to manage employee data within a company, with features such as adding, editing, deleting, and restoring employee data.
 
-## Fitur Utama
+## Key Features
 
-1. **Tambah Data Karyawan**
-   - Menambahkan data karyawan baru ke dalam sistem.
+1. **Add Employee Data**
+   - Add new employee data to the system.
 
-2. **Lihat Data Karyawan**
-   - Menampilkan semua data karyawan yang ada.
+2. **View Employee Data**
+   - Display all existing employee data.
 
-3. **Cari Data Karyawan**
-   - Mencari data karyawan berdasarkan nama dan divisi.
+3. **Search Employee Data**
+   - Search for employee data based on name and department.
 
-4. **Hapus Data Karyawan**
-   - Menghapus data karyawan dari sistem.
+4. **Delete Employee Data**
+   - Delete employee data from the system.
 
-5. **Lihat History Data yang Dihapus**
-   - Menampilkan riwayat data karyawan yang telah dihapus.
+5. **View History of Deleted Data**
+   - View the history of deleted employee data.
 
-6. **Edit Data Karyawan**
-   - Memperbarui informasi karyawan yang ada.
+6. **Edit Employee Data**
+   - Update existing employee information.
 
-7. **Ekspor Data Karyawan**
-   - Mengekspor data karyawan ke dalam format CSV.
+7. **Export Employee Data**
+   - Export employee data to a CSV file.
 
-8. **Restore Data Karyawan**
-   - Memulihkan data karyawan yang telah dihapus.
+8. **Restore Employee Data**
+   - Restore deleted employee data.
 
-9. **Pengangkatan Karyawan Jadi Tetap**
-   - Mengubah status karyawan kontrak menjadi karyawan tetap.
+9. **Promote Employee to Permanent Status**
+   - Change the employment status of contract employees to permanent employees.
 
-10. **Validasi Data Karyawan**
-   - Memastikan bahwa data yang dimasukkan oleh pengguna sesuai dengan format dan kriteria yang telah ditetapkan, mengurangi kemungkinan kesalahan input.
+10. **Validate Employee Data**
+   - Ensure that the data entered by the user meets the required format and criteria, reducing the chance of input errors.
 
-## Struktur Data Karyawan
+## Employee Data Structure
 
-Data karyawan disimpan dalam format list of dictionaries. Setiap karyawan memiliki atribut sebagai berikut:
+Employee data is stored in the format of a list of dictionaries. Each employee has the following attributes:
 
-- `kode_karyawan`: Kode unik untuk setiap karyawan.
-- `nama_lengkap`: Nama lengkap karyawan.
-- `nomor_ktp`: Nomor KTP karyawan.
-- `jabatan`: Jabatan karyawan di perusahaan.
-- `departemen`: Departemen tempat karyawan bekerja.
-- `tgl_mulai_kerja`: Tanggal mulai bekerja.
-- `gaji_pokok`: Gaji pokok karyawan.
-- `status_pekerjaan`: Status pekerjaan karyawan.
-- `pendidikan_terakhir`: Pendidikan terakhir yang ditempuh.
-- `nomor_telepon`: Nomor telepon karyawan.
-- `alamat`: Alamat tempat tinggal karyawan.
-- `email`: Alamat email karyawan.
-- `status_pernikahan`: Status pernikahan karyawan.
-- `jumlah_anak`: Jumlah anak karyawan.
-- `bpjs_kesehatan`: Status BPJS kesehatan karyawan.
-- `bpjs_ketenagakerjaan`: Status BPJS ketenagakerjaan karyawan.
+- `employee_code`: A unique code for each employee.
+- `full_name`: The employee's full name.
+- `id_number`: The employee's ID number.
+- `position`: The employee's position in the company.
+- `department`: The department the employee works in.
+- `start_date`: The employee's start date.
+- `basic_salary`: The employee's basic salary.
+- `employment_status`: The employee's employment status.
+- `last_education`: The employee's highest level of education.
+- `phone_number`: The employee's phone number.
+- `address`: The employee's residential address.
+- `email`: The employee's email address.
+- `marital_status`: The employee's marital status.
+- `number_of_children`: The number of children the employee has.
+- `health_bpjs`: The employee's health BPJS status.
+- `employment_bpjs`: The employee's employment BPJS status.
 
-## Fungsi-fungsi
+## Functions
 
-### 1. `create_data(data_karyawan)`
+### 1. `create_data(employee_data)`
 
-Fungsi untuk menambahkan data karyawan baru.
+Function to add new employee data.
 
-### 2. `read_data(data_karyawan)`
+### 2. `read_data(employee_data)`
 
-Fungsi untuk menampilkan data karyawan.
+Function to display employee data.
 
-### 3. `search_data(data_karyawan)`
+### 3. `search_data(employee_data)`
 
-Fungsi untuk mencari data karyawan berdasarkan nama dan divisi.
+Function to search employee data based on name and department.
 
-### 4. `delete_data(data_karyawan)`
+### 4. `delete_data(employee_data)`
 
-Fungsi untuk menghapus data karyawan.
+Function to delete employee data.
 
-### 5. `lihat_history_delete_data(history_delete)`
+### 5. `view_history_delete_data(delete_history)`
 
-Fungsi untuk melihat riwayat data yang dihapus.
+Function to view the history of deleted data.
 
-### 6. `edit_data(data_karyawan)`
+### 6. `edit_data(employee_data)`
 
-Fungsi untuk mengedit informasi karyawan.
+Function to edit employee information.
 
-### 7. `export_to_csv(data_karyawan, filename="data_karyawan.csv")`
+### 7. `export_to_csv(employee_data, filename="employee_data.csv")`
 
-Fungsi untuk mengekspor data karyawan ke dalam file CSV.
+Function to export employee data to a CSV file.
 
-### 8. `restore_data(data_karyawan)`
+### 8. `restore_data(employee_data)`
 
-Fungsi untuk mengembalikan data karyawan yang dihapus.
+Function to restore deleted employee data.
 
-### 9. `angkat_karyawan_jadi_tetap(data_karyawan)`
+### 9. `promote_employee_to_permanent(employee_data)`
 
-Fungsi untuk mengubah status karyawan kontrak menjadi karyawan tetap.
+Function to change the status of a contract employee to permanent.
 
-### 10. `validasi_data(data_karyawan)`
+### 10. `validate_data(employee_data)`
 
-Fungsi untuk memvalidasi input data karyawan baru, memastikan semua informasi yang dimasukkan sesuai dengan format yang diharapkan.
+Function to validate the input of new employee data, ensuring that all information entered follows the expected format.
 
-## Cara Menggunakan
+## How to Use
 
-1. Jalankan program dengan menjalankan file utama.
-2. Ikuti petunjuk yang muncul untuk memilih menu yang diinginkan.
-3. Masukkan data sesuai permintaan.
+1. Run the program by executing the main file.
+2. Follow the prompts to select the desired menu option.
+3. Enter the required data as requested.
 
-## Contoh Penggunaan
+## Example Usage
 
-1. **Menambah Data Karyawan**
-   - Pilih menu 1 dan ikuti instruksi untuk memasukkan data karyawan baru seperti nama, kode karyawan, jabatan, dan lainnya.
+1. **Add Employee Data**
+   - Select option 1 and follow the instructions to input new employee data, such as name, employee code, position, and others.
 
-2. **Melihat Data Karyawan**
-   - Pilih menu 2 untuk menampilkan semua data karyawan yang ada dalam sistem.
+2. **View Employee Data**
+   - Select option 2 to display all employee data currently in the system.
 
-3. **Mencari Data Karyawan**
-   - Pilih menu 3, masukkan nama dan divisi yang ingin dicari untuk menemukan data spesifik.
+3. **Search Employee Data**
+   - Select option 3, input the name and department to search for specific data.
 
-4. **Menghapus Data Karyawan**
-   - Pilih menu 4 dan masukkan kode serta nama lengkap karyawan yang ingin dihapus dari sistem.
+4. **Delete Employee Data**
+   - Select option 4 and input the code and full name of the employee to be deleted from the system.
 
-5. **Lihat History Data yang Dihapus**
-   - Pilih menu 5 untuk menampilkan riwayat data karyawan yang telah dihapus.
+5. **View History of Deleted Data**
+   - Select option 5 to display the history of deleted employee data.
 
-6. **Edit Data Karyawan**
-   - Pilih menu 6 untuk memperbarui informasi karyawan yang ada dengan memasukkan kode karyawan dan data baru.
+6. **Edit Employee Data**
+   - Select option 6 to update existing employee information by inputting the employee code and new data.
 
-7. **Mengekspor Data Karyawan**
-   - Pilih menu 7 untuk mengekspor data karyawan ke dalam file CSV, yang bisa dibuka dengan aplikasi spreadsheet.
+7. **Export Employee Data**
+   - Select option 7 to export employee data to a CSV file, which can be opened with spreadsheet applications.
 
-8. **Restore Data Karyawan**
-   - Pilih menu 8 dan masukkan kode karyawan yang ingin dipulihkan dari riwayat penghapusan.
+8. **Restore Employee Data**
+   - Select option 8 and input the employee code to restore deleted data from the deletion history.
 
-9. **Pengangkatan Karyawan Jadi Tetap**
-   - Pilih menu 9 untuk mengubah status karyawan kontrak menjadi karyawan tetap.
+9. **Promote Employee to Permanent Status**
+   - Select option 9 to change the status of a contract employee to permanent.
 
-10. **Keluar dari Program**
-    - Pilih menu 10 untuk keluar dari program dan menghentikan eksekusi.
+10. **Exit the Program**
+    - Select option 10 to exit the program and stop execution.
+
